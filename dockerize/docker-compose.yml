@@ -1,0 +1,22 @@
+version: '2'
+
+services:
+    web:
+        image: nginx:latest
+        ports:
+            - "8080:80"
+        volumes:
+            - ./simple-php-website:/simple-php-website
+            - ./site.conf:/etc/nginx/conf.d/default.conf
+        networks:
+            - sampl-network
+    php:
+        image: php:fpm
+        volumes:
+            - ./simple-php-website:/simple-php-website
+        networks:
+            - sampl-network
+
+networks:
+    sampl-network:
+        driver: bridge
