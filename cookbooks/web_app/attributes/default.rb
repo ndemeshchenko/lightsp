@@ -1,0 +1,5 @@
+default['app']['name'] = ''
+default['app']['source'] = ''
+default['app']['destination'] = ''
+default['app']['branch'] = 'master'
+default['app']['revision'] = 'master'

@@ -1,4 +1,5 @@
 DEPENDENCIES
+  git (~> 6.0.0)
   php (~> 4.0.0)
 
 GRAPH
@@ -6,6 +7,11 @@ GRAPH
     mingw (>= 1.1)
     seven_zip (>= 0.0.0)
   compat_resource (12.19.0)
+  dmg (4.0.0)
+  git (6.0.0)
+    build-essential (>= 0.0.0)
+    dmg (>= 0.0.0)
+    yum-epel (>= 0.0.0)
   mingw (2.0.1)
     seven_zip (>= 0.0.0)
   mysql (8.3.1)
